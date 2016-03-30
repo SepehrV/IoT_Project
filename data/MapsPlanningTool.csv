@@ -1,0 +1,76 @@
+Campus, Building, Floor, APName, MacAddress,Horizontal,Vertical,Height,Units
+UofA - North Campus, CompScie, 1st Floor,CompSci_1_AP4055.3997.dbd8,1c:aa:07:17:82:d0,73,37.4,10,feet
+UofA - North Campus, CompScie, 1st Floor,AP7081.0551.4e0d,00:08:30:70:7d:e0,27.5,70.7,10,feet
+UofA - North Campus, CompScie, 1st Floor,AP4055.3997.dbbe,e8:40:40:cd:fd:10,75,87.5,10,feet
+UofA - North Campus, CompScie, 1st Floor,AP6400.f1c5.d64e,1c:aa:07:17:81:f0,44.4,127.1,10,feet
+UofA - North Campus, CompScie, 1st Floor,AP4055.3997.dc44,1c:aa:07:22:06:40,97.5,131.5,10,feet
+UofA - North Campus, CompScie, 2nd Floor,AP4055.3997.dbba,e8:40:40:cd:fd:00,34.5,30.6,10,feet
+UofA - North Campus, CompScie, 2nd Floor,AP503d.e593.20b9,40:f4:ec:b3:10:90,75.3,44.3,10,feet
+UofA - North Campus, CompScie, 2nd Floor,AP503d.e586.4583,40:f4:ec:db:8d:a0,34.8,85.4,10,feet
+UofA - North Campus, CompScie, 2nd Floor,AP503d.e593.2024,40:f4:ec:b3:06:40,47.7,129.8,10,feet
+UofA - North Campus, CompScie, 2nd Floor,AP7081.0587.fd11,00:08:30:71:82:d0,97.7,119.8,10,feet
+UofA - North Campus, CompScie, 3rd,AP6400.f1c5.d66c,1c:aa:07:22:02:60,39.2,20.2,10,feet
+UofA - North Campus, CompScie, 3rd,AP7081.0577.ec14,00:08:30:8e:2c:b0,91.2,56.2,10,feet
+UofA - North Campus, CompScie, 3rd,AP503d.e593.1ef8,40:f4:ec:db:2f:90,22.2,82.8,10,feet
+UofA - North Campus, CompScie, 3rd,CompSci_3_AP7081.0587.fb87,00:08:30:8f:13:60,117.8,110.3,10,feet
+UofA - North Campus, CompScie, 3rd,AP7081.0551.4dfe,00:08:30:71:83:40,58.1,131.8,10,feet
+UofA - North Campus, CompScie, B1,AP84b8.02b3.b628,84:b8:02:cb:07:40,16.2,77.6,10,feet
+UofA - North Campus, CompScie, B1,AP84b8.02c5.4690,84:b8:02:ce:99:b0,61.1,83.5,10,feet
+UofA - North Campus, CompScie, B1,AP84b8.02b5.f528,84:b8:02:b6:ca:00,25.6,87.8,10,feet
+UofA - North Campus, CompScie, B1,CompSciB02_AP84b8.02a6.88fc,84:b8:02:aa:65:00,9.3,104,10,feet
+UofA - North Campus, CompScie, B1,AP84b8.02b5.f504,84:b8:02:b6:c9:40,57,103,10,feet
+UofA - North Campus, CompScie, B1,CompSciB10_AP84b8.02b3.b730,84:b8:02:cb:0b:80,73.2,102.8,10,feet
+UofA - North Campus, CompScie, B1,AP84b8.02a6.94c4,84:b8:02:c0:76:b0,25.2,117.7,10,feet
+UofA - North Campus, CompScie, B1,AP30e4.db05.920d,d0:c2:82:84:fa:10,95.5,113.1,10,feet
+UofA - North Campus, CompScie, B1,ComSciB02_AP84b8.02af.dca8,84:b8:02:bf:73:80,16.8,113.2,10,feet
+UofA - North Campus, CompScie, B1,AP84b8.02a7.70fc,84:b8:02:b3:c0:40,58.3,126.5,10,feet
+UofA - North Campus, CompScie, B1,AP503d.e593.1fd5,40:f4:ec:db:64:00,25.1,162.8,10,feet
+UofA - North Campus, CompScie, B1,AP30e4.db05.8dd9,d0:c2:82:84:91:50,68.9,162.5,10,feet
+UofA - North Campus, CAB, 1st Floor,CAB_M_APc471.fed9.244b,f0:25:72:db:b7:e0,13.8,20,10,feet
+UofA - North Campus, CAB, 1st Floor,CAB_M_AP1cdf.0f94.d983,f0:25:72:db:ac:c0,117.9,17.6,10,feet
+UofA - North Campus, CAB, 1st Floor,CAB_M_APc471.fed3.e463,f0:25:72:db:95:c0,146.4,22.1,10,feet
+UofA - North Campus, CAB, 1st Floor,CAB_M_AP1cdf.0f94.d949,08:17:35:30:8c:00,21.2,78.3,10,feet
+UofA - North Campus, CAB, 1st Floor,CAB_M_AP1cdf.0f94.d8ab,f0:25:72:db:95:d0,108,65.1,10,feet
+UofA - North Campus, CAB, 1st Floor,CAB_M_APc471.fed3.e557,f0:25:72:db:aa:20,20.7,118.4,10,feet
+UofA - North Campus, CAB, 1st Floor,CAB_M_AP1cdf.0f94.d8d3,08:17:35:30:81:90,108.2,110.9,10,feet
+UofA - North Campus, CAB, 1st Floor,CAB_M_AP1cdf.0f94.d98f,08:17:35:30:b1:50,21.7,158.8,10,feet
+UofA - North Campus, CAB, 1st Floor,CAB_M_APc471.fed9.2327,f0:25:72:db:a1:80,108.6,166.1,10,feet
+UofA - North Campus, CAB, 2nd Floor,CAB_243_2e19,1c:e6:c7:85:06:60,16.2,27.3,10,feet
+UofA - North Campus, CAB, 2nd Floor,CAB_265_6a8a,1c:e6:c7:85:1b:30,97.9,17.3,10,feet
+UofA - North Campus, CAB, 2nd Floor,CAB_235_6ed0,1c:e6:c7:c4:37:00,20.5,91.7,10,feet
+UofA - North Campus, CAB, 2nd Floor,CAB_273_dcfb,1c:e6:c7:85:06:20,84.9,98,10,feet
+UofA - North Campus, CAB, 2nd Floor,CAB_215_6eeb,1c:e6:c7:c4:37:d0,30.3,169.9,10,feet
+UofA - North Campus, CAB, 2nd Floor,CAB_289_6ed8,1c:e6:c7:c4:2d:d0,99.9,167,10,feet
+UofA - North Campus, CAB, 3rd Floor,CAB_415A_9939,1c:e6:c7:85:87:80,20.1,38,10,feet
+UofA - North Campus, CAB, 3rd Floor,CAB_365_7b9c,1c:e6:c7:c4:2f:c0,81.4,44.3,10,feet
+UofA - North Campus, CAB, 3rd Floor,CAB_335_7b7f,1c:e6:c7:c4:35:90,25.8,94.3,10,feet
+UofA - North Campus, CAB, 3rd Floor,CAB_377_f3e4,1c:e6:c7:c4:2e:60,87.9,102.3,10,feet
+UofA - North Campus, CAB, 3rd Floor,CAB_313_f00c,1c:e6:c7:85:06:a0,29.7,170.7,10,feet
+UofA - North Campus, CAB, 3rd Floor,CAB_387_f3e6,1c:e6:c7:c4:2f:70,89.9,170.5,10,feet
+UofA - North Campus, CAB, 4th Floor,CAB_443_99e2,f4:7f:35:f7:cd:b0,24.5,36.1,10,feet
+UofA - North Campus, CAB, 4th Floor,CAB_457_99d9,18:33:9d:0c:f8:60,95.8,34,10,feet
+UofA - North Campus, CAB, 4th Floor,CAB_434D_a1ea,f4:7f:35:f7:cc:d0,59,84.6,10,feet
+UofA - North Campus, CAB, 4th Floor,CAB_427_1acd,f4:7f:35:dd:af:a0,19.7,111.8,10,feet
+UofA - North Campus, CAB, 4th Floor,CAB_474_1cb4,f4:7f:35:dd:e2:80,99.3,93.5,10,feet
+UofA - North Campus, CAB, 4th Floor,APa493.4c46.9939,18:33:9d:0c:ed:a0,25.1,172.1,10,feet
+UofA - North Campus, CAB, 4th Floor,CAB_493_1cd6,f4:7f:35:f6:c1:50,99.2,168.1,10,feet
+UofA - North Campus, CAB, 5th Floor,CAB_545_8116,58:97:1e:14:65:30,20.7,35.3,10,feet
+UofA - North Campus, CAB, 5th Floor,CAB_563_cb1a,f4:7f:35:dd:e5:40,99.2,34.3,10,feet
+UofA - North Campus, CAB, 5th Floor,CAB_528C_f3c7,1c:e6:c7:c4:30:80,65.7,77.2,10,feet
+UofA - North Campus, CAB, 5th Floor,CAB_529_4cf7,58:97:1e:14:67:d0,20,104.2,10,feet
+UofA - North Campus, CAB, 5th Floor,CAB_577_b9ca,f4:7f:35:dd:e3:80,100.3,109.8,10,feet
+UofA - North Campus, CAB, 5th Floor,CAB_515_7b9d,1c:e6:c7:c4:36:c0,20.9,172.8,10,feet
+UofA - North Campus, CAB, 5th Floor,CAB_593_9872,f4:7f:35:f7:ae:10,98.7,172.2,10,feet
+UofA - North Campus, CAB, 6th Floor,CAB_643_4b99,58:97:1e:14:55:90,20.2,33.5,10,feet
+UofA - North Campus, CAB, 6th Floor,CAB_657_7fcb, 34:a8:4e:9a:85:c0,98,33.5,10,feet
+UofA - North Campus, CAB, 6th Floor,CAB_632_3d17, 58:97:1e:14:67:60,64,90.9,10,feet
+UofA - North Campus, CAB, 6th Floor,AP4c00.8227.edb3, f8:4f:57:06:b8:40,19.1,104.5,10,feet
+UofA - North Campus, CAB, 6th Floor,CAB_677_7f22, 58:97:1e:14:67:b0,99.4,116,10,feet
+UofA - North Campus, CAB, 6th Floor,CAB_615_7f4d,34:a8:4e:9a:88:00,20.1,117,10,feet
+UofA - North Campus, CAB, 6th Floor,CAB_693_f416,1c:17:d3:32:68:30,99.5,171.6,10,feet
+UofA - North Campus, CAB, B1,CAB_B_AP1cdf.0f94.dd3a,f0:25:72:db:f5:50,61.7,88.5,10,feet
+UofA - North Campus, CAB, B1,CAB_B_APc471.fed3.e4fe,f0:25:72:db:a2:80,155.8,87.8,10,feet
+UofA - North Campus, CAB, B1,CAB_B_APc471.fed3.e590,f0:25:72:db:b3:50,61.2,127.2,10,feet
+UofA - North Campus, CAB, B1,CAB_B_APc471.fed9.243b,08:17:35:30:ad:10,155.9,127.1,10,feet
+UofA - North Campus, CAB, B1,CAB_B_AP1cdf.0f94.dd89,08:17:35:32:10:80,121,175.3,10,feet
+UofA - North Campus, CAB, B1,CAB_B_APc471.fe90.021a,f0:25:72:da:88:50,156.3,166.4,10,feet
