@@ -2,7 +2,8 @@ import numpy as np
 import MySQLdb as sqldb
 import time
 
-db = sqldb.connect(host='localhost', user='root',passwd= 'Sepehr!', db='test')
+passwd = raw_input('please enter mysql root password: ')
+db = sqldb.connect(host='localhost', user='root',passwd= passwd, db='test')
 def gen_connection(Min=0, Max=50):
     try:
         return np.random.randint(Min,Max)
