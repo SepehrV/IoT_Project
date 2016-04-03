@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Hot Spot</string>
+
+    <string name="option1_button">CAB</string>
+    <string name="option2_button">Computer Science</string>
+    <string name="option3_button">option3 Button</string>
+    <string name="option4_button">option4 Button</string>
+
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_maps_prototype">Map</string>
+</resources>
