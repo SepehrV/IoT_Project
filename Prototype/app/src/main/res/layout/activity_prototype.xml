@@ -48,6 +48,14 @@
                 android:text="@string/option2_button"
                 android:onClick="sendMessageOption2"/>
 
+            <Button android:id="@+id/option3_button"
+                style="?metaButtonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/option3_button"
+                android:onClick="sendMessageOption3"/>
+
         </LinearLayout>
     </FrameLayout>
 

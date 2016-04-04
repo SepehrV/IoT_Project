@@ -43,19 +43,25 @@ public class PrototypeActivity extends AppCompatActivity {
     public void sendMessageOption1(View view) {
         Intent intent = new Intent(this, MapsPrototypeActivity.class);
         //EditText editText = (EditText) findViewById(R.id.edit_message);
-        String message = "CAB";
-        intent.putExtra(EXTRA_MESSAGE, message);
+        //String message = "CAB";
+        intent.putExtra(EXTRA_MESSAGE, Keys.Cab_label);
         startActivity(intent);
     }
 
     public void sendMessageOption2(View view) {
         Intent intent = new Intent(this, MapsPrototypeActivity.class);
         //EditText editText = (EditText) findViewById(R.id.edit_message);
-        String message = "CompScie";
-        intent.putExtra(EXTRA_MESSAGE, message);
+        //String message = "CompScie";
+        intent.putExtra(EXTRA_MESSAGE, Keys.CompScie_label);
         startActivity(intent);
     }
 
+    public void sendMessageOption3(View view) {
+        Intent intent = new Intent(this, MapsPrototypeActivity.class);
+
+        intent.putExtra(EXTRA_MESSAGE, Keys.All_Label);
+        startActivity(intent);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -1,6 +1,7 @@
 package com.example.ruben.prototype;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.AsyncTask;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
@@ -31,11 +32,11 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.protocol.BasicHttpContext;
 import org.apache.http.protocol.HttpContext;
 
-
-
 public class MapsPrototypeActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    public int cabConections=0;
+    public int compscieConections=0;
     public int conections=0;
 
     @Override
@@ -55,7 +56,6 @@ public class MapsPrototypeActivity extends FragmentActivity implements OnMapRead
 
     }
 
-
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
@@ -71,12 +71,6 @@ public class MapsPrototypeActivity extends FragmentActivity implements OnMapRead
 
         Intent intent = getIntent();
         String message = intent.getStringExtra(PrototypeActivity.EXTRA_MESSAGE);
-        //int nconections = 51;
-        //message.
-
-        //DRAWING CIRCULES
-
-
 
     }
 
@@ -101,26 +95,12 @@ public class MapsPrototypeActivity extends FragmentActivity implements OnMapRead
 
             Intent intent = getIntent();
             String location = intent.getStringExtra(PrototypeActivity.EXTRA_MESSAGE);
-            //String location = "";
-
-
-/*
-           location
-
-            if (message.equals("CAB")){
-                //System.out.println("Selected values : CAB");
-                location = "CAB";
-            }
-
-            if (message.equals("CMPUT")){
-                //System.out.println("Selected values : CMPUT");
-                location = "c";
-            }*/
-
 
             HttpClient httpClient = new DefaultHttpClient();
             HttpContext localContext = new BasicHttpContext();
-            HttpGet httpGet = new HttpGet("http://sepehr-rpi.crabdance.com/api.php/Complete?filter=Building,eq,"+location);
+            HttpGet httpGet = new HttpGet("http://sepehr-rpi.crabdance.com/api.php/Complete?");
+
+            //HttpGet httpGet = new HttpGet("http://sepehr-rpi.crabdance.com/api.php/Complete?filter=Building,eq,"+location);
 
             String text = null;
             try {
@@ -155,10 +135,13 @@ public class MapsPrototypeActivity extends FragmentActivity implements OnMapRead
 
                     //Iterate the jsonArray and print the info of JSONObjects
                     for(int i=0; i < jsonArray.length(); i++){
-
                         JSONArray obj = jsonArray.getJSONArray(i);
-                        //System.out.println("values : " + obj.getString(11));
-                        conections = conections + Integer.parseInt(obj.getString(11));
+
+                        if (obj.getString(1).equals(Keys.Cab_label))
+                            cabConections = cabConections + Integer.parseInt(obj.getString(11));
+
+                        if (obj.getString(1).equals(Keys.CompScie_label))
+                            compscieConections = compscieConections + Integer.parseInt(obj.getString(11));
 
                     }
                    // System.out.println("Total number of conections : " + conections);
@@ -167,74 +150,122 @@ public class MapsPrototypeActivity extends FragmentActivity implements OnMapRead
 
             }
 
-
-            if (message.equals("CAB"))
+            if (message.equals(Keys.Cab_label))
             {
-                System.out.println("N. of conections on CAB : "+ conections);
-
-                LatLng cameron = new LatLng(53.5269274, -113.523687);
-                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(cameron, 18));
+                LatLng cameron = new LatLng(Keys.Cab_lat, Keys.Cab_lon);
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(cameron, 17));
 
                 mMap.addMarker(new MarkerOptions()
                         .title("Cameron Library")
-                        .snippet(message)
+                        .snippet("Estimated number of people : " + cabConections)
                         .position(cameron));
 
-                //mMap.getCameraPosition().
-
-                //     if (nconections > 50)
-                //  {
                 CircleOptions circleOptions = new CircleOptions()
-                        .center(new LatLng(53.5269274, -113.523687))
-                        .radius(500); // In meters
-                // .strokeColor(5)
-                // .fillColor(5);
+                        .center(new LatLng(Keys.Cab_lat, Keys.Cab_lon))
+                        .radius(30) // In meters
+                        .strokeColor(Color.BLACK)
+                        .strokeWidth(2);
 
-                Circle circle = mMap.addCircle(circleOptions);
+                if (cabConections > 1000)
+                    circleOptions.fillColor(0x55cc0000); //Red
 
-// Get back the mutable Circle
-                /*
-                Circle circle = mMap.addCircle(circleOptions);
+                if (cabConections <= 1000 && cabConections >= 500 )
+                    circleOptions.fillColor(0x55ffd700); //Yellow
 
+                if (cabConections < 500 )
+                    circleOptions.fillColor(0x5500ff00); //Green
 
-                var cityCircle = new google.maps.Circle({
-                        strokeColor: '#FF0000',
-                    strokeOpacity: 0.8,
-                    strokeWeight: 2,
-                    fillColor: '#FF0000',
-                    fillOpacity: 0.35,
-                    map: map,
-                    center: citymap[city].center,
-                    radius: Math.sqrt(citymap[city].population) * 100
-                });*/
-
-                //    }
+                mMap.addCircle(circleOptions);
 
             }
 
-            if (message.equals("CompScie"))
+            if (message.equals(Keys.CompScie_label))
             {
-                System.out.println("N. of conections on CompScie : "+ conections);
-                LatLng cmput = new LatLng(53.5267106, -113.5271157);
-                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(cmput, 18));
+                //System.out.println("N. of conections on CompScie : "+ conections);
+                LatLng cmput = new LatLng(Keys.CompScie_Lat, Keys.CompScie_Lon);
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(cmput, 17));
 
                 mMap.addMarker(new MarkerOptions()
                         .title("Computer Science Building")
-                        .snippet(message)
+                        .snippet("Estimated number of people : " + compscieConections)
                         .position(cmput));
+
+                CircleOptions circleOptions = new CircleOptions()
+                        .center(new LatLng(Keys.CompScie_Lat, Keys.CompScie_Lon))
+                        .radius(30) // In meters
+                        .strokeColor(Color.BLACK)
+                        .strokeWidth(2);
+
+                if (compscieConections > 1000)
+                    circleOptions.fillColor(0x55cc0000); //Red
+
+                if (compscieConections <= 1000 && compscieConections >= 500 )
+                    circleOptions.fillColor(0x55ffd700); //Yellow
+
+                if (compscieConections < 500 )
+                    circleOptions.fillColor(0x5500ff00); //Green
+
+                mMap.addCircle(circleOptions);
+
             }
 
-            //TextView textView = new TextView(this);
-            //textView.setTextSize(40);
-            //textView.setText(message);
-            //RelativeLayout layout = (RelativeLayout) findViewById(R.id.option1_button);
-            //layout.addView(textView);
+            //public static final double UofA_Lat = 53.5232189;
+            //public static final double UofA_Lon = -113.5263186;
 
-            // Add a marker in Sydney and move the camera
+            if (message.equals(Keys.All_Label))
+            {
 
-            //mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in " + message));
-            // mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+                LatLng uofa = new LatLng(Keys.UofA_Lat, Keys.UofA_Lon);
+                LatLng compscie = new LatLng(Keys.CompScie_Lat, Keys.CompScie_Lon);
+                LatLng cab = new LatLng(Keys.Cab_lat, Keys.Cab_lon);
 
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(uofa, 15));
+
+                mMap.addMarker(new MarkerOptions()
+                        .title("Computer Science Building")
+                        .snippet("Estimated number of people : " + compscieConections)
+                        .position(compscie));
+
+                CircleOptions circleOptions = new CircleOptions()
+                        .center(new LatLng(Keys.CompScie_Lat, Keys.CompScie_Lon))
+                        .radius(30) // In meters
+                        .strokeColor(Color.BLACK)
+                        .strokeWidth(2);
+
+                if (compscieConections > 1000)
+                    circleOptions.fillColor(0x55cc0000); //Red
+
+                if (compscieConections <= 1000 && compscieConections >= 500 )
+                    circleOptions.fillColor(0x55ffd700); //Yellow
+
+                if (compscieConections < 500 )
+                    circleOptions.fillColor(0x5500ff00); //Green
+
+                mMap.addCircle(circleOptions);
+
+                mMap.addMarker(new MarkerOptions()
+                        .title("Cameron Library")
+                        .snippet("Estimated number of people : " + cabConections)
+                        .position(cab));
+
+                CircleOptions circleOptions2 = new CircleOptions()
+                        .center(new LatLng(Keys.Cab_lat, Keys.Cab_lon))
+                        .radius(30) // In meters
+                        .strokeColor(Color.BLACK)
+                        .strokeWidth(2);
+
+                if (cabConections > 1000)
+                    circleOptions2.fillColor(0x55cc0000); //Red
+
+                if (cabConections <= 1000 && cabConections >= 500 )
+                    circleOptions2.fillColor(0x55ffd700); //Yellow
+
+                if (cabConections < 500 )
+                    circleOptions2.fillColor(0x5500ff00); //Green
+
+                mMap.addCircle(circleOptions2);
+
+            }
 
         }
 
